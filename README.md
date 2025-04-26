@@ -1,1 +1,1 @@
-# Restaurant-Page
+ Search functionality allows for entries related to a city name or location, and the app queries a weather service to retrieve current weather data including temperature, conditions, humidity, and wind speed.
