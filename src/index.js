@@ -1,4 +1,4 @@
-import apiKey from './api.js';
+import {apiKey, pixApiKey} from './api.js';
 import "./style.css";
 
 
@@ -29,8 +29,8 @@ async function render(){
 
     const pictureQueryParameter = res+' weather in '+ fullAddress;
     
-    const pexelKey = 'g06fwABu65n8dOKZWF7XEee0IrtLhPT8oqSFTzS9VDKP0QPUO6zxpOPi';
-    const visuals = await fetch(`https://api.pexels.com/v1/search?query=${pictureQueryParameter}`, 
+    const pexelKey = pixApiKey;
+    const visuals = await fetch(`https://api.pexels.com/v1/search?query=${pictureQueryParameter}`,
         {
             mode:'cors', 
             headers: {
